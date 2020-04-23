@@ -1,0 +1,58 @@
+/* ---------------------------------------- */
+
+/* ==            SECTION                */
+
+/*---------------------------------------- */
+section{
+    @include sectionmenu($color-verylightgreen);
+    h2.nom{
+        $value:map-get($section-menu,palette_gout);
+        font-family: map-get($value, nomdurestaurant);
+        font-weight: map-get($value, nomweight);
+        @include linearGradient(map-deep-get($value, textbg, direction), 
+                                map-deep-get($value, textbg, coloranddirectionone),
+                                map-deep-get($value, textbg, coloranddirectiontwo)
+                                );
+        font-size: 40px;
+        font-weight: $weightmedium;
+        @include mobile-extrasmall{
+            font-size: 30px;
+        }
+        @include desktop-only{
+            font-size: 60px;
+        }
+    }
+    aside {
+        h3{
+           &::after {
+                    @include souligneimg($trait_droite_lapalettedugoutinverse,13vw);
+                }
+                &::before {
+                    @include souligneimg($trait_gauche_lapalettedugout,13vw);
+                } 
+            margin-top: 10vh;
+            @include serviceh3($kalam);
+            font-weight: $weightmedium;
+            & span{
+                display: inline-block;
+                margin-top: -5px;
+                &::after{
+                    @extend %souligne;
+                    @include borderhover($color-apple);
+                }
+                &:hover::after{
+                    @extend %hoversouligne;
+                }
+            }       
+        }
+        .plat{
+            @include plat($kalam);
+            & div:nth-child(2n+1){
+                text-align: left;
+            }        
+            & div:nth-child(2n){
+                font-weight: $weightmedium;
+            }
+        }   
+    }   
+}

@@ -1,0 +1,513 @@
+/* ---------------------------------------- */
+/* ==          COLOR CODES               */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          COLOR CODES               */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* == Texte*/
+/*---------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@font-face {
+  font-family: "texgyrepagellabold";
+  src: url("../polices/texgyrepagellabold/texgyrepagellabold.eot") format("eot"), url("../polices/texgyrepagellabold/texgyrepagellabold.woff") format("woff"), url("../polices/texgyrepagellabold/texgyrepagellabold.ttf") format("truetype"), url("../polices/texgyrepagellabold/texgyrepagellabold.svg") format("svg");
+}
+@font-face {
+  font-family: "WorstveldSling";
+  src: url("../polices/WorstveldSling/worss.eot") format("eot"), url("../polices/WorstveldSling/worss.woff") format("woff"), url("../polices/WorstveldSling/worss.ttf") format("truetype"), url("../polices/WorstveldSling/worss.svg") format("svg");
+}
+/* ---------------------------------------- */
+/* == Formatage du texte*/
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          IMAGES               */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          ANIMATIONS              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          ANIMATIONS              */
+/*---------------------------------------- */
+@-webkit-keyframes loadpoint {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+}
+@keyframes loadpoint {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+}
+@-webkit-keyframes headshake {
+  25% {
+    -webkit-transform: translateX(4%);
+    -moz-transform: translateX(4%);
+    -ms-transform: translateX(4%);
+    -o-transform: translateX(4%);
+  }
+  75% {
+    transform: translateX(-4%);
+    -webkit-transform: translateX(-4%);
+    -moz-transform: translateX(-4%);
+    -ms-transform: translateX(-4%);
+    -o-transform: translateX(-4%);
+  }
+}
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(4%);
+    -moz-transform: translateX(4%);
+    -ms-transform: translateX(4%);
+    -o-transform: translateX(4%);
+  }
+  75% {
+    transform: translateX(-4%);
+    -webkit-transform: translateX(-4%);
+    -moz-transform: translateX(-4%);
+    -ms-transform: translateX(-4%);
+    -o-transform: translateX(-4%);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/* ---------------------------------------- */
+/* ==          Fonctions              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          Fonctions              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          VARIABLES              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          VARIABLES              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          MIXIN              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          PLACEHOLDER              */
+/*---------------------------------------- */
+footer .liensutiles, header {
+  background-color: #579c87;
+  color: #fdcb46;
+  padding: 20px 18px 20px 10px;
+  font-family: "police_specifique_ohmyfood";
+}
+
+section aside h3 span::after {
+  content: "";
+  height: 30px;
+  width: 100%;
+  display: inline-block;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 1000ms ease-in-out;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -webkit-transition: transform 1000ms ease-in-out;
+  -moz-transition: transform 1000ms ease-in-out;
+  -ms-transition: transform 1000ms ease-in-out;
+  -o-transition: transform 1000ms ease-in-out;
+}
+
+section aside h3 span:hover::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
+/* ---------------------------------------- */
+/* ==          MAP              */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          BODY            */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==          BODY            */
+/*---------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------- */
+/* ==            HEADER                */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==            HEADER                */
+/*---------------------------------------- */
+header {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+header h1 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  header h1 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    display: inline-block;
+    width: 20vw;
+    -webkit-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+  }
+  header h1:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+}
+
+/* ---------------------------------------- */
+/* ==            SECTION                */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==            SECTION                */
+/*---------------------------------------- */
+section {
+  padding: 6vh 8vw 4vh 8vw;
+  background-color: #fff5fe;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 20vh;
+  margin-top: 10vh;
+}
+@media (min-width: 1024px) {
+  section {
+    width: 44vw;
+    margin-left: 20vw;
+  }
+}
+section img {
+  width: 70px;
+  max-height: 50px;
+}
+section h2.nom {
+  font-family: "Croissant One", cursive;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(to right), color-stop(#d8852e 0%), to(#905bfd 100%));
+  background-image: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10vh;
+}
+@media (max-width: 600px) {
+  section h2.nom {
+    font-size: 25px;
+  }
+}
+@media (max-width: 455px) {
+  section h2.nom {
+    font-size: 18px;
+  }
+}
+section aside.first {
+  color: #d8852e;
+}
+section aside.first h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+section aside.first h3 span::after {
+  border-top: solid #d8852e 3px;
+}
+section aside.first h3::after {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_un_chicalafrancaise.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+section aside.first h3::before {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_un_chicalafrancaise.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+}
+section aside.middle {
+  color: #bc8bb2;
+}
+section aside.middle h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+section aside.middle h3 span::after {
+  border-top: solid #bc8bb2 3px;
+}
+section aside.middle h3::after {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_deux_chicalafrancaise.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+section aside.middle h3::before {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_deux_chicalafrancaise.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+}
+section aside.end {
+  color: #6e4ccc;
+}
+section aside.end h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+section aside.end h3 span::after {
+  border-top: solid #6e4ccc 3px;
+}
+section aside.end h3::after {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_trois_chicalafrancaise1.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+section aside.end h3::before {
+  content: "";
+  background: url("../Images/Traitchicalafrancaise/trait_trois_chicalafrancaise1.JPG");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 13vw;
+  height: 2vh;
+}
+section aside h3 {
+  margin-top: 10vh;
+}
+section aside h3 span {
+  display: inline-block;
+  margin-top: -5px;
+}
+@media (max-width: 600px) {
+  section aside h3 span {
+    font-size: 14px;
+  }
+}
+section aside h3 span::after {
+  border-top: solid #bc8bb2 3px;
+}
+section aside .plat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 600px) {
+  section aside .plat {
+    font-size: 14px;
+  }
+}
+section aside .plat div:nth-child(2n+1) {
+  text-align: left;
+}
+section aside .plat div:nth-child(2n) {
+  font-weight: 700;
+}
+
+/* ---------------------------------------- */
+/* ==            FOOTER                 */
+/*---------------------------------------- */
+/* ---------------------------------------- */
+/* ==            FOOTER                 */
+/*---------------------------------------- */
+footer {
+  text-align: center;
+}
+footer .liensutiles {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 20px 18px 20px 10px;
+}
+footer .liensutiles .mentions {
+  position: relative;
+  left: 1em;
+  float: left;
+}
+@media (min-width: 1024px) {
+  footer .liensutiles .mentions:hover {
+    -webkit-animation: bounce 0.5s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+    animation: bounce 0.5s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+  }
+}
+footer .liensutiles .contact {
+  position: relative;
+  float: right;
+  right: 4em;
+  -webkit-animation: headshake 1000ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+  animation: headshake 1000ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+}
+
+/*# sourceMappingURL=style_lechicalafrancaise.css.map */

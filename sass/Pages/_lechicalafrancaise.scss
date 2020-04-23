@@ -1,0 +1,134 @@
+/* ---------------------------------------- */
+
+/* ==            SECTION                */
+
+/*---------------------------------------- */
+section{
+    @include sectionmenu($color-selago);
+    @include desktop-only{
+        width:44vw;
+        margin-left: 20vw;
+    }
+    margin-top: 10vh;
+    
+    img{
+        width: 70px;
+        max-height:50px;
+    }
+    h2.nom{
+        $value:map-get($section-menu,chic_francais);
+        font-family: map-get($value, nomdurestaurant);
+        font-weight: map-get($value, nomweight);
+        @include linearGradient(map-deep-get($value, textbg, direction), 
+                                map-deep-get($value, textbg, coloranddirectionone),
+                                map-deep-get($value, textbg, coloranddirectiontwo)
+                                );
+        @include mobile-small{
+            font-size: 25px;
+        }
+        @include mobile-extrasmall{
+            font-size: 18px;
+        }                         
+        font-size: 30px;
+        font-weight: $weightmedium;
+        margin-bottom: 10vh;
+
+    }
+    aside {
+        &.first{
+            color: $color-brandypunch;
+            h3 {
+                @include serviceh3($sanserif);
+                & span{
+                    &::after{
+                        @include borderhover($color-brandypunch);
+                    }
+                }
+                &::after {
+                    @include souligneimg($trait_un_chicalafrancaise,13vw);
+                    transform: rotate(-180deg);
+                    -webkit-transform: rotate(-180deg);
+                    -moz-transform: rotate(-180deg);
+                    -ms-transform: rotate(-180deg);
+                    -o-transform: rotate(-180deg);
+                }
+                &::before {
+                    @include souligneimg($trait_un_chicalafrancaise,13vw);
+                }   
+            }
+        }
+        &.middle{
+            color: $color-londonhue;
+            h3 {
+                @include serviceh3($sanserif);
+                & span{
+                    &::after{
+                        @include borderhover($color-londonhue);
+                    }
+                }
+                &::after {
+                    @include souligneimg($trait_deux_chicalafrancaise,13vw);
+                    transform: rotate(-180deg);
+                    -webkit-transform: rotate(-180deg);
+                    -moz-transform: rotate(-180deg);
+                    -ms-transform: rotate(-180deg);
+                    -o-transform: rotate(-180deg);
+                }
+                &::before {
+                    @include souligneimg($trait_deux_chicalafrancaise,13vw);
+                }
+            }
+        }
+        &.end{
+            color: $color-slateblue;
+            h3 {
+                @include serviceh3($sanserif);
+                & span{
+                    &::after{
+                        @include borderhover($color-slateblue);
+                    }
+                }
+                &::after {
+                    @include souligneimg($trait_trois_chicalafrancaise,13vw);
+                    transform: rotate(-180deg);
+                    -webkit-transform: rotate(-180deg);
+                    -moz-transform: rotate(-180deg);
+                    -ms-transform: rotate(-180deg);
+                    -o-transform: rotate(-180deg);
+                }
+                &::before {
+                    @include souligneimg($trait_trois_chicalafrancaise,13vw);
+                }
+            }
+        }
+        h3{
+            margin-top: 10vh;
+            & span{
+                @include mobile-small{
+                    font-size: 14px;
+                }
+                display: inline-block;
+                margin-top: -5px;
+                &::after{
+                    @extend %souligne;
+                    @include borderhover($color-londonhue);
+                }
+                &:hover::after{
+                    @extend %hoversouligne;
+                }
+            }       
+        }
+        .plat{
+            @include mobile-small{
+                font-size: 14px;
+            }
+            @include plat($sanserif);
+            & div:nth-child(2n+1){
+                text-align: left;
+            }        
+            & div:nth-child(2n){
+                font-weight: $extrabold;
+            }
+        }   
+    }   
+}

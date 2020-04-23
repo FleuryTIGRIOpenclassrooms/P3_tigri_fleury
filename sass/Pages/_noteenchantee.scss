@@ -1,0 +1,94 @@
+/* ---------------------------------------- */
+
+/* ==            SECTION                */
+
+/*---------------------------------------- */
+h2{
+    @include titlemenuh2($sanserif);
+    text-shadow: 0px 0px 6px $color-fontgray;
+    opacity: 0.7;
+}
+section{
+    @include sectionmenu($color-palepink);
+    @include desktop-only{
+        width:44vw;
+        margin-left: 20vw;
+    }
+    img{
+        width: 70px;
+        max-height:30px;
+        @include desktop-only{
+            width: 70px;
+            max-height:50px;
+        }
+    }
+    h3.nom,.nom{
+        font-family: $musicale;
+        font-size: 30px;
+        
+    }
+    h3.nom{
+        font-size: 30px;
+        font-weight: $weightmedium;
+        margin-top: -2px;
+        @include desktop-only{
+            font-size: 40px;
+        }
+    }
+    aside {
+        margin-bottom: 10vh;
+        h3{
+            @include serviceh3($kalam);
+            &::after {
+                @include souligneimg($trait_noteenchantee,15vw);
+            }
+            &::before {
+                @include souligneimg($trait_noteenchantee_inverse,15vw);
+            }
+            & span{
+                display: inline-block;
+                margin-top: -5px;
+                &::after{
+                    @extend %souligne;
+                    @include borderhover(red);
+                }
+                &:hover::after{
+                    @extend %hoversouligne;
+                }
+            }           
+        }
+        .plat{
+            @include plat($kalam);
+            & div:nth-child(2n+1){
+                text-align: left;
+            }        
+            & div:nth-child(2n){
+                font-weight: $extrabold;
+            }
+        }   
+    }   
+    figure{
+        img{
+            height: 25px;
+            @include mobile-extrasmall{
+                margin-left: -50px;
+                height: 20px;
+            }
+            @include desktop-only{
+                height: 30px;
+            }
+        }
+        figcaption.nom{
+            display: inline-block;
+            font-size: 25px;
+            @include mobile-extrasmall{
+                margin-left: -10px;
+                font-size: 20px;
+            }
+            @include desktop-only{
+                margin-left: -10px;
+                font-size: 30px;
+            }
+        }
+    }
+}

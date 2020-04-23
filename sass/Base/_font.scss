@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@font-face { //La police utilisé pour le menu du restaurant 'chic français"
+    font-family: 'texgyrepagellabold';
+    src: url('../polices/texgyrepagellabold/texgyrepagellabold.eot') format('eot'),
+         url('../polices/texgyrepagellabold/texgyrepagellabold.woff') format('woff'),
+         url('../polices/texgyrepagellabold/texgyrepagellabold.ttf') format('truetype'),
+         url('../polices/texgyrepagellabold/texgyrepagellabold.svg') format('svg');
+}
+@font-face {//La police utilisé pour le menu du restaurant 'le délice des papilles"
+    font-family: 'WorstveldSling';
+    src: url('../polices/WorstveldSling/worss.eot') format('eot'),
+         url('../polices/WorstveldSling/worss.woff') format('woff'),
+         url('../polices/WorstveldSling/worss.ttf') format('truetype'),
+         url('../polices/WorstveldSling/worss.svg') format('svg');
+}
+$musicale:'Devonshire', cursive;
+$alafrancaise:'Croissant One', cursive;
+$dancing:'Dancing Script', cursive;
+$kscript:'Kaushan Script', cursive;
+$notoserif: 'Noto Serif', serif;
+$fontcursive: 'Tillana', cursive;
+$texgyrepagellabold:'texgyrepagellabold';
+$WorstveldSling:'WorstveldSling';
+$kalam:'Kalam',cursive;
+$sanserif:Arial, Helvetica, sans-serif;
+/* ---------------------------------------- */
+
+/* == Formatage du texte*/
+
+/*---------------------------------------- */
+    $extrabold:700;
+    $bold: 600;
+    $weightmedium: 500;
+    $italic:italic;
+    $normal:normal;
+    $taille_normal:2em;
+    $taille_medium: 1.5em;
+    $taille_small:1em;
+    $letterspacing_large: 2.5px;
+    $letterspacing_small: 0.5px;

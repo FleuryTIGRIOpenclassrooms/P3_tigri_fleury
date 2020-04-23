@@ -1,0 +1,183 @@
+        /* ---------------------------------------- */
+
+/* ==            SECTION                */
+
+/*---------------------------------------- */
+section{
+    padding-left: 28vw;
+    
+    @include  mobile-small{
+        padding-left: 20vw;
+    }
+    @include desktop-only{
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+    cursor: pointer;   
+    p{
+        text-align: justify;
+    }
+    &.espace{
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        @include desktop-only{
+            padding-right: 20vw;
+            padding-left: 20vw;
+        }
+        margin-bottom: 20vh;
+        h2{
+            font-size: 18px;
+            &.high{
+                font-weight: $bold;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+        }
+    }
+    & .icone{
+        width:50px;
+        max-height: 20px;
+    }
+    & .restaurant{
+        @include  mobile-small{
+            width: 60vw;
+            height: 60vh;
+        }
+        @include mobile-large{
+            width: 44vw;
+            height: 60vh;
+        }
+        margin-bottom: 5vh;
+        box-shadow: rgba(121,121,121,.35) 1px 1px 18px;
+        display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column; /* */
+            -webkit-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+        @include desktop-only {
+             width: 22vw;
+            &::after {
+                content: "";
+                position: absolute;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0.3;
+                -webkit-transition: all 1000ms ease-in-out;
+                transition: all 1000ms ease-in-out;
+                width: 22vw;
+                height: 60vh;
+                -moz-transition: all 1000ms ease-in-out;
+                -ms-transition: all 1000ms ease-in-out;
+                -o-transition: all 1000ms ease-in-out;
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+            }
+            & .menu{
+            font-size: $taille_normal;
+            letter-spacing: 0.5px;
+            }
+            & .container{
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                //opacity: 0.5;
+                -webkit-transition: all 1000ms ease-in-out;
+                transition: all 1000ms ease-in-out;
+                text-align: center;
+                -moz-transition: all 1000ms ease-in-out;
+                -ms-transition: all 1000ms ease-in-out;
+                -o-transition: all 1000ms ease-in-out;
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+            }
+            &:hover .container{
+                        -webkit-transform: scale(1.5);
+                        transform: scale(1.5);
+                        //opacity: 1;
+                        -moz-transform: scale(1.5);
+                        -ms-transform: scale(1.5);
+                        -o-transform: scale(1.5);
+            }
+            &:hover::after {
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    opacity: 0;
+                    -moz-transform: scale(0);
+                    -ms-transform: scale(0);
+                    -o-transform: scale(0);
+            }
+        }
+    }
+    @each $content, $value in $section-menu {
+        & .#{$content} {
+                 background-color: map-get($value, bg);
+                 color: map-get($value, texte);
+                 border: solid map-get($value, bg) 1px;
+                & .nom {
+                    font-family: map-get($value, nomdurestaurant);
+                    font-size: map-get($value, fontsize);
+                    font-weight: map-get($value, nomweight);
+                    @include linearGradient(map-deep-get($value, textbg, direction), 
+                                            map-deep-get($value, textbg, coloranddirectionone),
+                                            map-deep-get($value, textbg, coloranddirectiontwo)
+                                            );
+                }
+                & .menu {
+                    font-weight: map-get($value, menuweight);
+                    font-family: map-get($value, fontmenu);
+                    font-style: map-get($value, fontstyle);
+                    letter-spacing: map-get($value, letterspacing);
+                }
+                &::after {
+                    background-color: map-get($value, bg);
+                }
+            }
+        } 
+    & .fa-music{
+          color: $color-wildwatermelon;
+    }     
+} 
+/* ---------------------------------------- */
+
+/* ==            FOOTER                */
+
+/*---------------------------------------- */
+/* Prochainement*/
+.prochainement{
+    @extend%typograhy;
+    display: inline-block;
+    margin-bottom: 80px;
+    padding: 1.5% 5% 2% 5%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    & span{
+                font-size: 2em;
+                height:10px;
+                display: inline-block;
+                margin-left: 5px;
+                -webkit-animation: loadpoint 1000ms backwards infinite ease-in-out alternate;
+                animation: loadpoint 1000ms backwards infinite ease-in-out alternate;
+                @for $i from 1 through 3 {
+                &.point_#{$i} {
+                -webkit-animation-delay: 300ms* $i;
+                        animation-delay: 300ms* $i;
+           }
+       }
+    }
+}

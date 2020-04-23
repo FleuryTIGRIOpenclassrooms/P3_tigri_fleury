@@ -1,0 +1,35 @@
+/* ---------------------------------------- */
+
+/* ==            FOOTER                 */
+
+/*---------------------------------------- */
+footer{
+    text-align: center;
+    
+    
+    & .liensutiles{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        padding:20px 18px 20px 10px;
+        @extend %typograhy;
+        & .mentions{
+            position: relative;
+            left: 1em;
+            float: left;
+            @include desktop-only {
+                &:hover{
+                    -webkit-animation: bounce 0.5s cubic-bezier(.4,.1,.6,.9) infinite;
+                            animation: bounce 0.5s cubic-bezier(.4,.1,.6,.9) infinite;
+                }
+            }
+        }
+        & .contact{
+          position: relative;
+          float: right;
+          right: 4em;
+          -webkit-animation: headshake 1000ms cubic-bezier(.4,.1,.6,.9) infinite;
+                  animation: headshake 1000ms cubic-bezier(.4,.1,.6,.9) infinite;
+        }
+    }
+}

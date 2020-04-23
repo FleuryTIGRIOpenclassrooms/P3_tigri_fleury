@@ -1,0 +1,129 @@
+/* ---------------------------------------- */
+
+/* ==            SECTION                */
+
+/*---------------------------------------- */
+section{
+    @include sectionmenu($color-zircon);
+    @include desktop-only{
+        width:44vw;
+        margin-left: 20vw;
+    }
+    margin-top: 10vh;
+    
+    img{
+        width: 70px;
+        max-height:50px;
+    }
+    h2.nom{
+        $value:map-get($section-menu,delice_papilles);
+        font-family: map-get($value, nomdurestaurant);
+        font-weight: map-get($value, nomweight);
+        @include linearGradient(map-deep-get($value, textbg, direction), 
+                                map-deep-get($value, textbg, coloranddirectionone),
+                                map-deep-get($value, textbg, coloranddirectiontwo)
+                                );
+        
+        font-size: 40px;
+        font-weight: $weightmedium;
+        margin-bottom: 10vh;
+        @include mobile-small{
+            font-size: 30px;
+        }
+        @include desktop-only{
+            font-size: 60px;
+        }
+    }
+    aside {
+        &.first{
+            h3 {
+                & span{
+                    &::after{
+                        @include borderhover($color-unmellowyellow);
+                    }
+                }
+                &::after {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_un_ledelicedespapillesinverse,10vw);
+                    }
+                    @include souligneimg($trait_un_ledelicedespapillesinverse,13vw);
+                }
+                &::before {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_un_ledelicedespapilles,10vw);
+                    }
+                    @include souligneimg($trait_un_ledelicedespapilles,13vw);
+                }   
+            }
+        }
+        &.middle{
+            h3 {
+                & span{
+                    &::after{
+                        @include borderhover($color-azureradiance);
+                    }
+                }
+                &::after {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_deux_ledelicedespapillesinverse,10vw);
+                    }
+                    @include souligneimg($trait_deux_ledelicedespapillesinverse,13vw);
+                }
+                &::before {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_deux_ledelicedespapilles,10vw);
+                    }
+                    @include souligneimg($trait_deux_ledelicedespapilles,13vw);
+                }
+            }
+        }
+        &.end{
+            h3 {
+                & span{
+                    &::after{
+                        @include borderhover($color-dodgerblue);
+                    }
+                }
+                &::after {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_trois_ledelicedespapillesinverse,10vw);
+                    }
+                    @include souligneimg($trait_trois_ledelicedespapillesinverse,13vw);
+                }
+                &::before {
+                    @include mobile-extrasmall{
+                        @include souligneimg($trait_trois_ledelicedespapilles,10vw);
+                    }
+                    @include souligneimg($trait_trois_ledelicedespapilles,13vw);
+                }
+            }
+        }
+        h3{
+            margin-top: 10vh;
+            @include mobile-extrasmall{
+                font-size: 15px;;
+            }
+            @include serviceh3($kalam);
+            font-weight: $normal;
+            & span{
+                display: inline-block;
+                margin-top: -5px;
+                &::after{
+                    @extend %souligne;
+                }
+                &:hover::after{
+                    @extend %hoversouligne;
+                }
+            }                  
+        }
+        .plat{
+            @include plat($kalam);
+            & div:nth-child(2n+1){
+                text-align: left;
+            }        
+            & div:nth-child(2n){
+                font-weight: $normal;
+            }
+        }   
+    }   
+}
